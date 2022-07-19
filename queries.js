@@ -19,5 +19,5 @@ const getParticipants = (request, response) => {
 }
 
 module.exports = {
-  getUsers,
+  getParticipants,
 }
