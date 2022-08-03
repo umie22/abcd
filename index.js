@@ -7,10 +7,10 @@ const path = require('path')
 const app = express();
 app.use(cors());
 const pool = new Pool({
-  host: "ec2-176-34-215-248.eu-west-1.compute.amazonaws.com",
-  user: "zaiaryvqbpwwcb",
-  password: "731fafeb016f84ea7f87300cbd19a24ba3e96adbaaf92504bc8d945d0302489b",
-  database: "delu1t92658u0"
+    user: 'zaiaryvqbpwwcb',
+    host: 'ec2-176-34-215-248.eu-west-1.compute.amazonaws.com',
+    database: 'delu1t92658u0',
+    password: '731fafeb016f84ea7f87300cbd19a24ba3e96adbaaf92504bc8d945d0302489b',
     port: 5432,
     ssl: {
         rejectUnauthorized: false,
@@ -34,7 +34,7 @@ FROM participant
 `;
 
 
-app.get('/display', (req, res) => {
+app.get('/participant', (req, res) => {
   var micro_username = req.query.username;
 
   console.log("username: " + micro_username);
